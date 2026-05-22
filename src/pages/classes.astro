@@ -6,7 +6,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
 
 <Layout title={`Classes - ${siteData.name}`} description="Browse our wide range of fitness classes">
   <!-- Hero Section -->
-  <section class="pt-32 pb-20 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900">
+  <section class="pt-32 pb-20 bg-linear-to-br from-black via-neutral-950 to-black">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Our Classes</h1>
@@ -18,11 +18,11 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
   </section>
 
   <!-- Detailed Classes Section -->
-  <section class="py-20 bg-slate-800">
+  <section class="py-20 bg-neutral-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="space-y-16">
         {classes.map((classItem) => (
-          <div class="bg-slate-900 rounded-xl border border-slate-700 overflow-hidden">
+          <div class="bg-neutral-900 rounded-xl border border-neutral-800 overflow-hidden">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
               <!-- Image -->
               <div class="relative h-64 lg:h-auto">
@@ -35,7 +35,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                   loading="lazy"
                 />
                 <div class="absolute top-4 right-4">
-                  <span class="bg-orange-500 text-white text-sm px-4 py-2 rounded-full font-semibold">
+                  <span class="bg-yellow-400 text-black text-sm px-4 py-2 rounded-full font-semibold">
                     {classItem.difficulty}
                   </span>
                 </div>
@@ -46,7 +46,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                 <div class="flex items-center justify-between mb-4">
                   <h2 class="text-3xl font-bold text-white">{classItem.name}</h2>
                   <div class="flex items-center text-gray-400 gap-2">
-                    <i class="ri-time-line text-orange-500"></i>
+                    <i class="ri-time-line text-yellow-400"></i>
                     <span>{classItem.duration}</span>
                   </div>
                 </div>
@@ -54,8 +54,8 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                 <p class="text-gray-300 text-lg mb-4 leading-relaxed">{classItem.detailedDescription}</p>
                 
                 <div class="mb-6">
-                  <p class="text-white font-semibold mb-2">Trainer: <span class="text-orange-500">{classItem.trainer}</span></p>
-                  <p class="text-gray-400 text-sm">What to expect: {classItem.whatToExpect}</p>
+                  <p class="text-white font-semibold mb-2">Entrenador: <span class="text-yellow-400">{classItem.Entrenador}</span></p>
+                  <p class="text-gray-400 text-sm"> Qué esperar: {classItem.whatToExpect}</p>
                 </div>
                 
                 <div class="mb-6">
@@ -63,7 +63,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                   <ul class="grid grid-cols-2 gap-2">
                     {classItem.benefits.map((benefit) => (
                       <li class="flex items-center gap-2 text-gray-300 text-sm">
-                        <i class="ri-checkbox-circle-fill text-orange-500"></i>
+                        <i class="ri-checkbox-circle-fill text-yellow-400"></i>
                         {benefit}
                       </li>
                     ))}
@@ -72,7 +72,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                 
                 <a
                   href="/contact"
-                  class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-all"
+                  class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-lg font-semibold transition-all"
                 >
                   Book This Class
                   <i class="ri-arrow-right-line"></i>
@@ -86,16 +86,16 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
   </section>
 
   <!-- Full Schedule Section -->
-  <section class="py-20 bg-slate-900">
+  <section class="py-20 bg-neutral-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-4xl font-bold text-white mb-4 text-center">Full Weekly Schedule</h2>
       <p class="text-xl text-gray-300 mb-12 text-center max-w-2xl mx-auto">
         Plan your week with our complete class schedule
       </p>
-      <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 overflow-x-auto">
+      <div class="bg-neutral-950 p-8 rounded-xl border border-neutral-800 overflow-x-auto">
         <table class="w-full text-left min-w-[800px]">
           <thead>
-            <tr class="border-b border-slate-700">
+            <tr class="border-b border-neutral-800">
               <th class="pb-4 pr-4 text-white font-semibold">Time</th>
               <th class="pb-4 px-4 text-white font-semibold">Monday</th>
               <th class="pb-4 px-4 text-white font-semibold">Tuesday</th>
@@ -124,7 +124,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                 const findClass = (daySchedule) => daySchedule.find(slot => slot.time === time);
                 
                 return (
-                  <tr class="border-b border-slate-700/50 hover:bg-slate-700/30 transition-colors">
+                  <tr class="border-b border-neutral-800/50 hover:bg-neutral-800/30 transition-colors">
                     <td class="py-3 pr-4 font-semibold text-white">{time}</td>
                     {[fullSchedule.monday, fullSchedule.tuesday, fullSchedule.wednesday, fullSchedule.thursday, fullSchedule.friday, fullSchedule.saturday, fullSchedule.sunday].map((daySchedule) => {
                       const classSlot = findClass(daySchedule);
@@ -133,7 +133,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                           {classSlot ? (
                             <div>
                               <div class="font-medium">{classSlot.class}</div>
-                              <div class="text-xs text-gray-400">{classSlot.trainer}</div>
+                              <div class="text-xs text-gray-400">{classSlot.Entrenador}</div>
                             </div>
                           ) : (
                             <span class="text-gray-600">-</span>

@@ -1,14 +1,26 @@
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+export const withBase = (path: string) => {
+  if (path === "/") {
+    return `${base}/`;
+  }
+
+  return `${base}${path}`;
+};
+
 export const siteData = {
-  name: "FitZone Gym",
-  tagline: "Transform Your Body, Transform Your Life",
-  description: "Your premier destination for fitness and wellness",
-  address: "123 Fitness Street, Health City, HC 12345",
-  phone: "+1 (555) 123-4567",
-  email: "info@fitzonegym.com",
+  name: "Gimnasio Macará",
+  tagline: "Entrena fuerte. Vive mejor.",
+  description: "Tu espacio de entrenamiento, fuerza y bienestar en Macará.",
+  address: "Calle 22 de Septiembre y Calle Macará, Macará, Loja, Ecuador",
+  phone: "+593 96 870 4627",
+  email: "info@gimnasiomacara.com",
+  mapsUrl:
+    "https://www.google.com/maps?vet=10CAAQoqAOahcKEwjgmZ2unc2UAxUAAAAAHQAAAAAQBg..i&client=firefox-b-d&fvr=1&pvq=Cg0vZy8xMWNzYmZuZGNjIgkKA2d5bRACGAM&lqi=CgpneW0gbWFjYXJhSOvi6Kbhq4CACFoSEAAYABgBIgpneW0gbWFjYXJhkgERZ3ltbmFzdGljc19jZW50ZXI&cs=1&um=1&ie=UTF-8&fb=1&gl=ec&sa=X&ftid=0x903503168cfd9ddf:0xda29222d2bd58df1",
   social: {
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
-    twitter: "https://twitter.com",
+    facebook: "https://www.facebook.com/GymMacara/",
+    instagram: "https://www.instagram.com/gym_macara/",
+    tiktok: "https://www.tiktok.com/@gym.macara",
     youtube: "https://youtube.com",
   },
 };
@@ -16,74 +28,82 @@ export const siteData = {
 export const socialLinks = [
   { name: "facebook", icon: "ri-facebook-fill", label: "Facebook" },
   { name: "instagram", icon: "ri-instagram-fill", label: "Instagram" },
-  { name: "twitter", icon: "ri-twitter-x-fill", label: "Twitter" },
+  { name: "tiktok", icon: "ri-tiktok-fill", label: "TikTok" },
   { name: "youtube", icon: "ri-youtube-fill", label: "YouTube" },
 ];
 
 export const contactInfo = [
   {
     icon: "ri-map-pin-line",
-    title: "Address",
+    title: "Dirección",
     content: siteData.address,
-    link: null,
+    link: siteData.mapsUrl,
   },
   {
     icon: "ri-phone-line",
-    title: "Phone",
+    title: "Teléfono",
     content: siteData.phone,
-    link: `tel:${siteData.phone}`,
+    link: `tel:${siteData.phone.replace(/\s/g, "")}`, 
   },
   {
     icon: "ri-mail-line",
-    title: "Email",
+    title: "Correo",
     content: siteData.email,
     link: `mailto:${siteData.email}`,
   },
   {
     icon: "ri-time-line",
-    title: "Hours",
-    content: ["Open 24/7 for Premium and Elite members", "Basic members: 5 AM - 11 PM daily"],
+    title: "Horario",
+    content: [
+      "Lunes: 4:30 AM - 10:00 PM",
+      "Martes: 4:30 AM - 10:00 PM",
+      "Miércoles: 4:30 AM - 9:00 PM",
+      "Jueves: 4:30 AM - 10:00 PM",
+      "Viernes: 4:30 AM - 10:00 PM",
+      "Sábado: 6:00 AM - 1:00 PM",
+      "Domingo: Cerrado",
+    ],
     link: null,
   },
 ];
 
 export const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Classes", href: "/classes" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Contact", href: "/contact" },
+  { name: "Inicio", href: withBase("/") },
+  { name: "Nosotros", href: withBase("/about") },
+  { name: "Clases", href: withBase("/classes") },
+  { name: "Planes", href: withBase("/pricing") },
+  { name: "Contacto", href: withBase("/contact") },
 ];
 
 export const features = [
   {
-    title: "24/7 Access",
-    description: "Work out on your schedule with round-the-clock access to our facilities",
+    title: "Horario amplio",
+    description: "Entrena desde temprano y adapta tu rutina a tu día.",
     icon: "ri-time-line",
   },
   {
-    title: "Expert Trainers",
-    description: "Certified personal trainers to guide you on your fitness journey",
+    title: "Entrenadores e instructores",
+    description: "Recibe asesoramiento técnico dentro del gimnasio para entrenar con mejor técnica, seguridad y constancia.",
     icon: "ri-user-star-line",
   },
   {
-    title: "Modern Equipment",
-    description: "State-of-the-art fitness equipment for all your training needs",
+    title: "Equipamiento completo",
+    description: "Máquinas, pesas y zonas de entrenamiento para fuerza, cardio y acondicionamiento físico.",
     icon: "ri-settings-3-line",
   },
   {
-    title: "Group Classes",
-    description: "Join energizing group classes from yoga to HIIT",
-    icon: "ri-group-line",
+    title: "Rutinas y acompañamiento",
+    description: "Apoyo para organizar tus entrenamientos según tu nivel, objetivo y condición física.",
+    icon: "ri-clipboard-line",
   },
   {
-    title: "Nutrition Support",
-    description: "Get personalized nutrition plans to complement your workouts",
-    icon: "ri-restaurant-line",
+    title: "Bienestar integral",
+    description: "Entrena fuerza, resistencia y salud en un ambiente motivador.",
+    icon: "ri-heart-pulse-line",
   },
   {
-    title: "Community",
-    description: "Join a supportive community of fitness enthusiasts",
+    title: "Comunidad fitness",
+    description: "Forma parte de una comunidad activa en Macará comprometida con la salud y el bienestar.",
     icon: "ri-community-line",
   },
 ];
@@ -163,7 +183,7 @@ export const pricingPlans = [
     price: "$29",
     period: "/month",
     features: [
-      "Access to gym facilities",
+      "Acceso a las instalaciones del gimnasio",
       "Basic equipment usage",
       "Locker room access",
       "Free parking",

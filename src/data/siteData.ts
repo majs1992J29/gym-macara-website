@@ -179,45 +179,78 @@ export const classes = [
 
 export const pricingPlans = [
   {
-    name: "Basic",
-    price: "$29",
-    period: "/month",
+    name: "Día",
+    price: "$3",
+    period: "/ día",
     features: [
-      "Acceso a las instalaciones del gimnasio",
-      "Basic equipment usage",
-      "Locker room access",
-      "Free parking",
+      "Acceso por un día",
+      "Uso de las áreas de entrenamiento",
+      "Ideal para probar el gimnasio",
+      "Consulta condiciones en recepción",
     ],
     popular: false,
   },
   {
-    name: "Premium",
-    price: "$59",
-    period: "/month",
+    name: "Semana",
+    price: "$10",
+    period: "/ semana",
     features: [
-      "Everything in Basic",
-      "Group classes included",
-      "Personal trainer consultation",
-      "Nutrition guidance",
-      "24/7 access",
+      "Acceso durante una semana",
+      "Uso de máquinas, pesas y cardio",
+      "Opción flexible para entrenar por pocos días",
+      "Asesoramiento técnico en sala",
+    ],
+    popular: false,
+  },
+  {
+    name: "Quincena",
+    price: "$15",
+    period: "/ 15 días",
+    features: [
+      "Acceso por quince días",
+      "Uso de las instalaciones del gimnasio",
+      "Entrenamiento de fuerza y cardio",
+      "Acompañamiento de instructores",
+    ],
+    popular: false,
+  },
+  {
+    name: "Mensual",
+    price: "$25",
+    period: "/ 30 días",
+    features: [
+      "Acceso por 30 días",
+      "Uso de los tres pisos de entrenamiento",
+      "Zona de tren superior, tren inferior y cardio",
+      "Asesoramiento técnico en sala",
     ],
     popular: true,
   },
   {
-    name: "Elite",
-    price: "$99",
-    period: "/month",
+    name: "Semestral",
+    price: "$125",
+    period: "/ 6 meses",
     features: [
-      "Everything in Premium",
-      "Unlimited personal training",
-      "Custom meal plans",
-      "Priority class booking",
-      "Spa & recovery access",
+      "Acceso por seis meses",
+      "Ideal para entrenamiento constante",
+      "Uso de áreas de entrenamiento y cardio",
+      "Mejor opción para progreso a mediano plazo",
+    ],
+    popular: false,
+  },
+  {
+    name: "Anual",
+    price: "$250",
+    period: "/ 1 año",
+    features: [
+      "Acceso por un año",
+      "Plan ideal para disciplina y constancia",
+      "Uso de las instalaciones disponibles",
+      "Mejor valor para entrenamiento continuo",
     ],
     popular: false,
   },
 ];
-
 export const testimonials = [
   {
     name: "Sarah Johnson",
@@ -228,7 +261,7 @@ export const testimonials = [
   {
     name: "Mike Chen",
     role: "Member for 1 year",
-    content: "Best gym in town! The equipment is top-notch and the 24/7 access fits perfectly with my schedule.",
+    content: "Gimnasio Macará cuenta con espacios amplios, buena atención y opciones para entrenar según tu disponibilidad.",
     rating: 5,
   },
   {
@@ -241,37 +274,31 @@ export const testimonials = [
 
 export const facilities = [
   {
-    title: "Cardio Zone",
-    description: "State-of-the-art treadmills, ellipticals, and bikes",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Strength Training",
-    description: "Comprehensive free weights and machines",
+    title: "Primera planta: tren superior",
+    description: "Zona orientada al entrenamiento de pecho, espalda, hombros, brazos y fuerza del tren superior.",
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop&q=80",
   },
   {
-    title: "Group Class Studio",
-    description: "Spacious studio for yoga, HIIT, and more",
-    image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Locker Rooms",
-    description: "Clean, modern facilities with showers",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80",
-  },
-  {
-    title: "Functional Training",
-    description: "TRX, battle ropes, and functional equipment",
+    title: "Segunda planta: tren inferior",
+    description: "Área para entrenamiento de piernas, glúteos y fortalecimiento del tren inferior.",
     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop&q=80",
   },
   {
-    title: "Recovery Zone",
-    description: "Stretching area and foam rollers",
+    title: "Tercera planta: cardio",
+    description: "Zona de caminadoras y bicicletas para mejorar resistencia, salud cardiovascular y condición física.",
     image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&q=80",
   },
+  {
+    title: "Sauna y baño turco",
+    description: "Área de recuperación y relajación para complementar tu entrenamiento.",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop&q=80",
+  },
+  {
+    title: "Asesoramiento en sala",
+    description: "Dos instructores disponibles para orientar técnica, rutinas y uso correcto del equipamiento.",
+    image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop&q=80",
+  },
 ];
-
 export const faqs = [
   {
     question: "Do I need to be fit to join?",
@@ -287,11 +314,11 @@ export const faqs = [
   },
   {
     question: "Are personal trainers included?",
-    answer: "Personal training is available as an add-on service. Premium and Elite memberships include consultation sessions, and Elite members get unlimited personal training.",
+    answer: "Contamos con instructores que orientan a los usuarios dentro del gimnasio. Para asesoramiento más específico, consulta directamente en recepción.",
   },
   {
     question: "What are your operating hours?",
-    answer: "We're open 24/7 for Premium and Elite members. Basic members have access during staffed hours (5 AM - 11 PM).",
+    answer: "Nuestro horario de atención varía según el día. Puedes revisar la sección de contacto o consultar directamente con el gimnasio.",
   },
   {
     question: "Is there parking available?",
@@ -341,14 +368,13 @@ export const successStories = [
 ];
 
 export const statistics = [
-  { number: "500+", label: "Active Members", icon: "ri-user-line" },
-  { number: "50+", label: "Expert Trainers", icon: "ri-user-star-line" },
-  { number: "10k+", label: "Classes Completed", icon: "ri-calendar-check-line" },
-  { number: "5k+", label: "Pounds Lost", icon: "ri-line-chart-line" },
-  { number: "98%", label: "Satisfaction Rate", icon: "ri-heart-line" },
-  { number: "15+", label: "Years Experience", icon: "ri-award-line" },
+  { number: "3", label: "Pisos de entrenamiento", icon: "ri-building-line" },
+  { number: "2", label: "Instructores", icon: "ri-user-star-line" },
+  { number: "$3", label: "Plan diario", icon: "ri-ticket-line" },
+  { number: "$25", label: "Plan mensual", icon: "ri-calendar-line" },
+  { number: "Sauna", label: "Y baño turco", icon: "ri-fire-line" },
+  { number: "Cardio", label: "Caminadoras y bicicletas", icon: "ri-heart-pulse-line" },
 ];
-
 export const fullSchedule = {
   monday: [
     { time: "6:00 AM", class: "HIIT Training", trainer: "Mike Chen" },
@@ -475,7 +501,7 @@ export const history = [
   {
     year: "2015",
     title: "24/7 Access",
-    description: "Introduced 24/7 access for Premium and Elite members, making fitness accessible around the clock.",
+    description: "Fortalecemos el servicio con horarios amplios, tres pisos de entrenamiento, sauna, baño turco y acompañamiento de instructores.",
   },
   {
     year: "2018",

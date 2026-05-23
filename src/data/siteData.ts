@@ -301,28 +301,28 @@ export const facilities = [
 ];
 export const faqs = [
   {
-    question: "Do I need to be fit to join?",
-    answer: "Not at all! We welcome members of all fitness levels. Our trainers will help you start at your own pace and gradually build your strength and endurance.",
+    question: "¿Necesito experiencia previa para entrenar?",
+    answer: "No. Puedes empezar desde tu nivel actual. Los instructores pueden orientarte para entrenar de forma progresiva, segura y con buena técnica.",
   },
   {
-    question: "What should I bring to the gym?",
-    answer: "Just bring a water bottle, towel, and comfortable workout clothes. We provide all equipment, lockers, and shower facilities.",
+    question: "¿Qué debo llevar al gimnasio?",
+    answer: "Te recomendamos llevar ropa cómoda, calzado deportivo, agua y una toalla personal.",
   },
   {
-    question: "Can I try the gym before committing?",
-    answer: "Yes! We offer a free 7-day trial pass so you can experience our facilities, classes, and community before making a commitment.",
+    question: "¿Puedo probar el gimnasio antes de inscribirme?",
+    answer: "Sí. Puedes acercarte al gimnasio, conocer las instalaciones y consultar el plan que mejor se adapte a tu disponibilidad.",
   },
   {
-    question: "Are personal trainers included?",
-    answer: "Contamos con instructores que orientan a los usuarios dentro del gimnasio. Para asesoramiento más específico, consulta directamente en recepción.",
+    question: "¿El gimnasio cuenta con instructores?",
+    answer: "Sí. Gimnasio Macará cuenta con 2 instructores que asesoran a los usuarios dentro del gimnasio.",
   },
   {
-    question: "What are your operating hours?",
-    answer: "Nuestro horario de atención varía según el día. Puedes revisar la sección de contacto o consultar directamente con el gimnasio.",
+    question: "¿Cuál es el horario de atención?",
+    answer: "El gimnasio atiende desde las 4:30 AM. Los horarios pueden variar según el día, por eso recomendamos consultar la sección de contacto o escribir directamente al gimnasio.",
   },
   {
-    question: "Is there parking available?",
-    answer: "Yes, we have free parking available for all members. The parking lot is well-lit and secure.",
+    question: "¿El gimnasio tiene sauna y baño turco?",
+    answer: "Sí. Gimnasio Macará cuenta con área de sauna y baño turco para complementar la experiencia de entrenamiento.",
   },
 ];
 

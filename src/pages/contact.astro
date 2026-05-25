@@ -3,7 +3,6 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import ContactForm from '../components/ContactForm.astro';
 import { siteData, socialLinks, contactInfo } from '../data/siteData';
-import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg"
 ---
 
 <Layout title={`Contacto - ${siteData.name}`} description="Contáctanos para empezar tu entrenamiento">
@@ -13,7 +12,7 @@ import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg"
       <div class="text-center max-w-3xl mx-auto">
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Contacto</h1>
         <p class="text-xl text-gray-300">
-          We're here to help you on your fitness journey. Get in touch today!
+          Estamos aquí para ayudarte a empezar o continuar tu entrenamiento.
         </p>
       </div>
     </div>
@@ -25,7 +24,7 @@ import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg"
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
         <!-- Contact Information -->
         <div>
-          <h2 class="text-3xl font-bold text-white mb-8">Get In Touch</h2>
+          <h2 class="text-3xl font-bold text-white mb-8">Ponte en contacto</h2>
           <div class="space-y-6">
             {contactInfo.map((info) => (
               <div class="flex items-start gap-4">
@@ -80,27 +79,27 @@ import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg"
   <!-- Visit Expectations Section -->
   <section class="py-20 bg-neutral-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-4 text-center">What to Expect When You Visit</h2>
+      <h2 class="text-4xl font-bold text-white mb-4 text-center">Qué puedes esperar en tu primera visita</h2>
       <p class="text-xl text-gray-300 mb-12 text-center max-w-2xl mx-auto">
-        Your first visit is important to us. Here's what you can expect.
+        Tu primera visita es importante. Esto es lo que encontrarás en Gimnasio Macará.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
         <div class="bg-neutral-950 p-6 rounded-xl border border-neutral-800 text-center hover:border-yellow-400 transition-all">
           <div class="w-16 h-16 bg-yellow-400/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="ri-user-search-line text-3xl text-yellow-400"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3">Tour & Consultation</h3>
+          <h3 class="text-xl font-bold text-white mb-3">Recorrido y asesoramiento</h3>
           <p class="text-gray-300 text-sm leading-relaxed">
-            We'll give you a comprehensive tour of our facilities and discuss your objetivos de entrenamiento
+            Te mostraremos las instalaciones y conversaremos sobre tus objetivos de entrenamiento.
           </p>
         </div>
         <div class="bg-neutral-950 p-6 rounded-xl border border-neutral-800 text-center hover:border-yellow-400 transition-all">
           <div class="w-16 h-16 bg-yellow-400/10 rounded-lg flex items-center justify-center mx-auto mb-4">
             <i class="ri-group-line text-3xl text-yellow-400"></i>
           </div>
-          <h3 class="text-xl font-bold text-white mb-3">Conoce nuestro equipo</h3>
+          <h3 class="text-xl font-bold text-white mb-3">Conoce a nuestros instructores</h3>
           <p class="text-gray-300 text-sm leading-relaxed">
-            Get introduced to our trainers and staff who will support you on your journey
+            Conocerás a los instructores que pueden orientarte dentro del gimnasio.
           </p>
         </div>
         <div class="bg-neutral-950 p-6 rounded-xl border border-neutral-800 text-center hover:border-yellow-400 transition-all">
@@ -109,14 +108,14 @@ import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg"
           </div>
           <h3 class="text-xl font-bold text-white mb-3">Opciones de planes</h3>
           <p class="text-gray-300 text-sm leading-relaxed">
-            Explore our flexible membership plans designed to fit your lifestyle and budget
+            Conoce los planes disponibles: día, semana, quincena, mensual, semestral y anual.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Response Time Section -->
+  <!-- Tiempo de respuesta Section -->
   <section class="py-20 bg-neutral-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto">
@@ -126,37 +125,37 @@ import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg"
               <i class="ri-time-line text-4xl text-yellow-400"></i>
             </div>
             <div>
-              <h3 class="text-2xl font-bold text-white mb-3">Response Time</h3>
+              <h3 class="text-2xl font-bold text-white mb-3">Tiempo de respuesta</h3>
               <p class="text-gray-300 mb-4 leading-relaxed">
-                We're committed to getting back to you quickly. Here's what you can expect:
+                Te responderemos lo antes posible según el canal de contacto.
               </p>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
                   <i class="ri-checkbox-circle-fill text-yellow-400 text-xl mt-0.5"></i>
                   <div>
-                    <span class="text-white font-semibold">Email inquiries:</span>
-                    <span class="text-gray-300"> We respond within 24 hours during business days</span>
+                    <span class="text-white font-semibold">Consultas por correo:</span>
+                    <span class="text-gray-300"> Respondemos lo antes posible en días laborables</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="ri-checkbox-circle-fill text-yellow-400 text-xl mt-0.5"></i>
                   <div>
-                    <span class="text-white font-semibold">Phone calls:</span>
-                    <span class="text-gray-300"> Available during staffed hours (5 AM - 11 PM)</span>
+                    <span class="text-white font-semibold">Llamadas telefónicas:</span>
+                    <span class="text-gray-300"> Disponibles durante el horario de atención</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="ri-checkbox-circle-fill text-yellow-400 text-xl mt-0.5"></i>
                   <div>
-                    <span class="text-white font-semibold">Form submissions:</span>
-                    <span class="text-gray-300"> Confirmation within 2 hours, full response within 24 hours</span>
+                    <span class="text-white font-semibold">Mensajes del formulario:</span>
+                    <span class="text-gray-300"> Revisamos los mensajes y respondemos lo antes posible</span>
                   </div>
                 </li>
                 <li class="flex items-start gap-3">
                   <i class="ri-checkbox-circle-fill text-yellow-400 text-xl mt-0.5"></i>
                   <div>
-                    <span class="text-white font-semibold">Urgent matters:</span>
-                    <span class="text-gray-300"> Call us directly for immediate assistance</span>
+                    <span class="text-white font-semibold">Casos urgentes:</span>
+                    <span class="text-gray-300"> Llámanos directamente para una atención más rápida</span>
                   </div>
                 </li>
               </ul>
@@ -168,25 +167,38 @@ import MapImage from "@assets/photo-1517487881594-2787fef5ebf7.jpg"
   </section>
 
   <!-- Map Section (Placeholder) -->
+    <!-- Map Section -->
   <section class="py-20 bg-neutral-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-white mb-12 text-center">Find Us</h2>
-      <div class="max-w-5xl mx-auto bg-neutral-950 p-8 rounded-xl border border-neutral-800">
-        <div class="aspect-video bg-neutral-800 rounded-lg flex items-center justify-center overflow-hidden relative">
-          <Image
-            src={MapImage}
-            alt="Gym location map"
-            width={1200}
-            height={600}
-            class="w-full h-full object-cover opacity-50"
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-bold text-white mb-12 text-center">
+        Encuéntranos
+      </h2>
+
+      <div class="bg-neutral-950 p-4 md:p-6 rounded-xl border border-neutral-800">
+        <div class="aspect-video rounded-lg overflow-hidden border border-neutral-800">
+          <iframe
+            title="Ubicación de Gimnasio Macará en Google Maps"
+            src="https://www.google.com/maps?q=Gimnasio%20%22Macar%C3%A1%22%2C%20Macar%C3%A1%2C%20Loja%2C%20Ecuador&z=18&output=embed"
+            class="w-full h-full"
             loading="lazy"
-          />
-          <div class="absolute inset-0 flex items-center justify-center text-center p-4">
-            <div>
-              <i class="ri-map-pin-line text-5xl text-yellow-400 mb-4"></i>
-              <p class="text-gray-300 text-lg">Map integration can be added here (Google Maps, etc.)</p>
-            </div>
-          </div>
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="text-center mt-6">
+          <p class="text-gray-300 mb-4">
+            Calle 22 de Septiembre y Calle Macará, Macará, Loja, Ecuador.
+          </p>
+
+          <a
+            href="https://www.google.com/maps/place/Gimnasio+%22Macar%C3%A1%22/@-4.3849179,-79.9460957,18z/data=!3m1!4b1!4m6!3m5!1s0x903503168cfd9ddf:0xda29222d2bd58df1!8m2!3d-4.3849179!4d-79.9449463!16s%2Fg%2F11csbfndcc?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center gap-3 bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-lg font-bold transition-all"
+          >
+            Abrir en Google Maps
+            <i class="ri-map-pin-line"></i>
+          </a>
         </div>
       </div>
     </div>

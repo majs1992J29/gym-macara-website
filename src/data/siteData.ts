@@ -123,7 +123,7 @@ export const classes = [
   {
     name: "Yoga & Flexibility",
     description: "Improve flexibility, balance, and mental wellness",
-    detailedDescription: "Find your inner peace while improving flexibility and strength. Our yoga classes combine traditional poses with modern techniques to enhance balance, reduce stress, and increase mobility. Suitable for all levels, from beginners to advanced practitioners.",
+    detailedDescription: "Mejora tu movilidad, flexibilidad y control corporal con ejercicios guiados según tu nivel y condición física.",
     duration: "60 min",
     difficulty: "All Levels",
     image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&h=600&fit=crop&q=80",
@@ -134,7 +134,7 @@ export const classes = [
   {
     name: "Strength Training",
     description: "Build muscle and increase strength with guided workouts",
-    detailedDescription: "Build lean muscle and increase your strength with our comprehensive strength training program. Our expert trainers guide you through proper form and technique using free weights, machines, and bodyweight exercises. Perfect for building a strong, toned physique.",
+    detailedDescription: "Desarrolla fuerza, masa muscular y técnica correcta usando máquinas, pesas y ejercicios guiados por nuestros instructores.",
     duration: "60 min",
     difficulty: "Intermediate",
     image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop&q=80",
@@ -510,11 +510,11 @@ export const history = [
   },
 ];
 export const paymentOptions = {
-  methods: ["Credit/Debit Cards", "Bank Transfer", "PayPal", "Apple Pay", "Google Pay"],
+  methods: ["Efectivo", "Transferencia bancaria", "Consulta otros métodos en recepción"],
   plans: [
-    { type: "Monthly", description: "Pay month-to-month with no long-term commitment" },
-    { type: "Annual", description: "Save 15% with annual payment - best value!" },
-    { type: "Family Plan", description: "Special rates for families - contact us for details" },
+    { type: "Mensual", description: "Pago por 30 días de acceso al gimnasio" },
+    { type: "Anual", description: "Pago por un año de entrenamiento" },
+    { type: "Planes disponibles", description: "Consulta en recepción los planes por día, semana, quincena, mes, semestre o año" },
   ],
   guarantee: "7-day money-back guarantee on all memberships",
   trial: "Free 7-day trial available for new members",

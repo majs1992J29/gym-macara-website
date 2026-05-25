@@ -4,7 +4,7 @@ import PricingPlans from '../components/PricingPlans.astro';
 import { siteData, pricingPlans, paymentOptions } from '../data/siteData';
 ---
 
-<Layout title={`Pricing - ${siteData.name}`} description="Choose the perfect membership plan for your fitness journey">
+<Layout title={`Planes - ${siteData.name}`} description="Elige el plan que mejor se adapte a tus objetivos de entrenamiento">
   <!-- Hero Section -->
   <section class="pt-32 pb-20 bg-linear-to-br from-black via-neutral-950 to-black">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,107 +20,96 @@ import { siteData, pricingPlans, paymentOptions } from '../data/siteData';
   <PricingPlans showHeading={false} />
 
   <!-- Comparison Table Section -->
-  <section class="py-20 bg-neutral-950">
+  <section class="py-20 bg-neutral-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-4 text-center">Plan Comparison</h2>
-      <p class="text-xl text-gray-300 mb-12 text-center max-w-2xl mx-auto">
-        Compare features across all membership plans
+      <h2 class="text-4xl font-bold text-white mb-4 text-center">
+        Comparación de planes
+      </h2>
+      <p class="text-xl text-gray-300 mb-12 text-center">
+        Compara la duración y beneficios principales de cada plan disponible
       </p>
-      <div class="bg-neutral-900 rounded-xl border border-neutral-800 overflow-x-auto">
-        <table class="w-full min-w-[600px]">
+
+      <div class="bg-neutral-950 rounded-xl border border-neutral-800 overflow-x-auto">
+        <table class="w-full text-left">
           <thead>
             <tr class="border-b border-neutral-800">
-              <th class="px-6 py-4 text-left text-white font-semibold">Features</th>
-              {pricingPlans.map((plan) => (
-                <th class="px-6 py-4 text-center text-white font-semibold">
-                  {plan.name}
-                  {plan.popular && (
-                    <span class="block text-yellow-400 text-sm font-normal mt-1">Más popular</span>
-                  )}
-                </th>
-              ))}
+              <th class="px-6 py-4 font-bold text-white">Características</th>
+              <th class="px-6 py-4 font-bold text-white text-center">Día</th>
+              <th class="px-6 py-4 font-bold text-white text-center">Semana</th>
+              <th class="px-6 py-4 font-bold text-white text-center">Quincena</th>
+              <th class="px-6 py-4 font-bold text-white text-center">
+                Mensual
+                <span class="block text-yellow-400 text-sm font-normal mt-1">Más popular</span>
+              </th>
+              <th class="px-6 py-4 font-bold text-white text-center">Semestral</th>
+              <th class="px-6 py-4 font-bold text-white text-center">Anual</th>
             </tr>
           </thead>
-          <tbody class="text-gray-300">
-            <tr class="border-b border-neutral-800/50">
-              <td class="px-6 py-4 font-medium">Gym Access</td>
-              {pricingPlans.map(() => (
+
+          <tbody class="divide-y divide-neutral-800">
+            <tr>
+              <td class="px-6 py-4 font-medium text-white">Duración</td>
+              <td class="px-6 py-4 text-center text-gray-300">1 día</td>
+              <td class="px-6 py-4 text-center text-gray-300">7 días</td>
+              <td class="px-6 py-4 text-center text-gray-300">15 días</td>
+              <td class="px-6 py-4 text-center text-gray-300">30 días</td>
+              <td class="px-6 py-4 text-center text-gray-300">6 meses</td>
+              <td class="px-6 py-4 text-center text-gray-300">1 año</td>
+            </tr>
+
+            <tr>
+              <td class="px-6 py-4 font-medium text-white">Precio</td>
+              <td class="px-6 py-4 text-center text-yellow-400 font-semibold">$3</td>
+              <td class="px-6 py-4 text-center text-yellow-400 font-semibold">$10</td>
+              <td class="px-6 py-4 text-center text-yellow-400 font-semibold">$15</td>
+              <td class="px-6 py-4 text-center text-yellow-400 font-semibold">$25</td>
+              <td class="px-6 py-4 text-center text-yellow-400 font-semibold">$125</td>
+              <td class="px-6 py-4 text-center text-yellow-400 font-semibold">$250</td>
+            </tr>
+
+            <tr>
+              <td class="px-6 py-4 font-medium text-white">Acceso al gimnasio</td>
+              {Array(6).fill(0).map(() => (
                 <td class="px-6 py-4 text-center">
                   <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
                 </td>
               ))}
             </tr>
-            <tr class="border-b border-neutral-800/50">
-              <td class="px-6 py-4 font-medium">24/7 Access</td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-close-circle-line text-gray-600 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
-              </td>
-            </tr>
-            <tr class="border-b border-neutral-800/50">
-              <td class="px-6 py-4 font-medium">Group Classes</td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-close-circle-line text-gray-600 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
-              </td>
-            </tr>
-            <tr class="border-b border-neutral-800/50">
-              <td class="px-6 py-4 font-medium">Entrenador personal</td>
-              <td class="px-6 py-4 text-center">
-                <span class="text-gray-400 text-sm">Consultation only</span>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <span class="text-gray-400 text-sm">Consultation included</span>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <span class="text-yellow-400 font-semibold">Ilimitado</span>
-              </td>
-            </tr>
-            <tr class="border-b border-neutral-800/50">
-              <td class="px-6 py-4 font-medium">Asesoramiento técnico</td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-close-circle-line text-gray-600 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <span class="text-yellow-400 font-semibold">Planes personalizados</span>
-              </td>
-            </tr>
-            <tr class="border-b border-neutral-800/50">
-              <td class="px-6 py-4 font-medium">Spa & Recovery</td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-close-circle-line text-gray-600 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-close-circle-line text-gray-600 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
-              </td>
-            </tr>
+
             <tr>
-              <td class="px-6 py-4 font-medium">Reserva prioritaria</td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-close-circle-line text-gray-600 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-close-circle-line text-gray-600 text-xl"></i>
-              </td>
-              <td class="px-6 py-4 text-center">
-                <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
-              </td>
+              <td class="px-6 py-4 font-medium text-white">Tres pisos de entrenamiento</td>
+              {Array(6).fill(0).map(() => (
+                <td class="px-6 py-4 text-center">
+                  <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
+                </td>
+              ))}
+            </tr>
+
+            <tr>
+              <td class="px-6 py-4 font-medium text-white">Zona de cardio</td>
+              {Array(6).fill(0).map(() => (
+                <td class="px-6 py-4 text-center">
+                  <i class="ri-checkbox-circle-fill text-yellow-400 text-xl"></i>
+                </td>
+              ))}
+            </tr>
+
+            <tr>
+              <td class="px-6 py-4 font-medium text-white">Asesoramiento en sala</td>
+              {Array(6).fill(0).map(() => (
+                <td class="px-6 py-4 text-center text-yellow-400 font-semibold">
+                  Disponible
+                </td>
+              ))}
+            </tr>
+
+            <tr>
+              <td class="px-6 py-4 font-medium text-white">Sauna y baño turco</td>
+              {Array(6).fill(0).map(() => (
+                <td class="px-6 py-4 text-center text-gray-300">
+                  Consultar
+                </td>
+              ))}
             </tr>
           </tbody>
         </table>
@@ -156,12 +145,12 @@ import { siteData, pricingPlans, paymentOptions } from '../data/siteData';
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="bg-yellow-400/10 border border-yellow-400/30 p-6 rounded-xl text-center">
             <i class="ri-shield-check-line text-4xl text-yellow-400 mb-4"></i>
-            <h4 class="text-xl font-bold text-white mb-2">Money-Back Guarantee</h4>
+            <h4 class="text-xl font-bold text-white mb-2">Condiciones de los planes</h4>
             <p class="text-gray-300">{paymentOptions.guarantee}</p>
           </div>
           <div class="bg-yellow-400/10 border border-yellow-400/30 p-6 rounded-xl text-center">
             <i class="ri-gift-line text-4xl text-yellow-400 mb-4"></i>
-            <h4 class="text-xl font-bold text-white mb-2">Free Trial</h4>
+            <h4 class="text-xl font-bold text-white mb-2">Promociones disponibles</h4>
             <p class="text-gray-300">{paymentOptions.trial}</p>
           </div>
         </div>
@@ -177,19 +166,19 @@ import { siteData, pricingPlans, paymentOptions } from '../data/siteData';
         <div class="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-yellow-400 transition-all">
           <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
             <i class="ri-question-line text-yellow-400"></i>
-            Can I cancel my membership anytime?
+            ¿Puedo cancelar mi plan en cualquier momento?
           </h3>
           <p class="text-gray-400 leading-relaxed">
-            Yes, you can cancel your membership at any time with 30 days notice. No long-term contracts required.
+            Consulta en recepción las condiciones de cancelación, vigencia y renovación de cada plan.
           </p>
         </div>
         <div class="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-yellow-400 transition-all">
           <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
             <i class="ri-question-line text-yellow-400"></i>
-            Do you offer trial periods?
+            ¿Puedo probar el gimnasio antes de pagar un plan?
           </h3>
           <p class="text-gray-400 leading-relaxed">
-            Yes! We offer a 7-day free trial for new members. Come in and experience everything we have to offer.
+            Puedes consultar en recepción las opciones disponibles para conocer el gimnasio y sus servicios.
           </p>
         </div>
         <div class="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-yellow-400 transition-all">
@@ -204,7 +193,7 @@ import { siteData, pricingPlans, paymentOptions } from '../data/siteData';
         <div class="bg-neutral-950 p-6 rounded-xl border border-neutral-800 hover:border-yellow-400 transition-all">
           <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
             <i class="ri-question-line text-yellow-400"></i>
-            What payment methods do you accept?
+            ¿Qué métodos de pago aceptan?
           </h3>
           <p class="text-gray-400 leading-relaxed">
             Aceptamos pagos según los métodos disponibles en el gimnasio. Consulta en recepción para confirmar opciones de pago y condiciones.
@@ -221,7 +210,7 @@ import { siteData, pricingPlans, paymentOptions } from '../data/siteData';
         ¿Listo para empezar?
       </h2>
       <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-        Contact us today to schedule a tour and start your fitness journey
+        Contáctanos hoy para conocer el gimnasio y empezar tu proceso de entrenamiento
       </p>
       <a
         href="/contact"

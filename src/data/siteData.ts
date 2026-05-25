@@ -255,7 +255,7 @@ export const testimonials = [
   {
     name: "Sarah Johnson",
     role: "Member for 2 years",
-    content: "FitZone has completely transformed my fitness journey. The trainers are amazing and the community is so supportive!",
+    content: "Gimnasio Macará me ha motivado a entrenar con más constancia. El ambiente es bueno y los instructores ayudan durante el entrenamiento.",
     rating: 5,
   },
   {
@@ -343,7 +343,7 @@ export const successStories = [
     age: 32,
     duration: "8 months",
     result: "Lost 45 lbs",
-    story: "I was skeptical at first, but FitZone changed my life. The supportive trainers and community kept me motivated. I've never felt better!",
+    story: "Entrenar en Gimnasio Macará me ayudó a ser más constante, mejorar mi técnica y organizar mejor mis rutinas de entrenamiento.",
     beforeImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=600&fit=crop&q=80",
     afterImage: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=600&fit=crop&q=80",
   },
@@ -360,8 +360,8 @@ export const successStories = [
     name: "Lisa Anderson",
     age: 35,
     duration: "1 year",
-    result: "Completed first marathon",
-    story: "From never running to completing a marathon - FitZone's cardio programs and group classes gave me the endurance and confidence I needed.",
+    result: "Mejoró su condición física",
+    story: "Con el acompañamiento de los instructores y el acceso a las zonas de fuerza y cardio, pudo avanzar progresivamente en su condición física.",
     beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=600&fit=crop&q=80",
     afterImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=600&fit=crop&q=80",
   },
@@ -516,7 +516,7 @@ export const paymentOptions = {
     { type: "Anual", description: "Pago por un año de entrenamiento" },
     { type: "Planes disponibles", description: "Consulta en recepción los planes por día, semana, quincena, mes, semestre o año" },
   ],
-  guarantee: "7-day money-back guarantee on all memberships",
-  trial: "Free 7-day trial available for new members",
+  guarantee: "Consulta en recepción las condiciones, vigencia y beneficios de cada plan",
+  trial: "Consulta en recepción si existe alguna promoción disponible",
 };
 

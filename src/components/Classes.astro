@@ -1,5 +1,5 @@
 ---
-import { classes } from '../data/siteData';
+import { classes, withBase } from '../data/siteData';
 ---
 
 <section id="classes" class="py-20 bg-neutral-900">
@@ -27,7 +27,7 @@ import { classes } from '../data/siteData';
               <span>{classItem.duration}</span>
             </div>
             <a
-              href="/contact"
+              href={withBase("/contact")}
               class="text-yellow-400 hover:text-yellow-300 font-semibold flex items-center gap-2"
             >
               Consultar
@@ -40,7 +40,7 @@ import { classes } from '../data/siteData';
 
     <div class="text-center mt-16">
       <a
-        href="/classes"
+        href={withBase("/classes")}
         class="inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-300 text-black px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
       >
         Ver entrenamientos

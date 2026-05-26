@@ -1,5 +1,5 @@
 ---
-import { classSchedule } from '../data/siteData';
+import { classSchedule, withBase } from '../data/siteData';
 ---
 
 <section id="schedule" class="py-20 bg-neutral-900">
@@ -40,7 +40,7 @@ import { classSchedule } from '../data/siteData';
                   </td>
                   <td class="px-6 py-4">
                     <a
-                      href="/contact"
+                      href={withBase("/contact")}
                       class="text-yellow-400 hover:text-yellow-300 font-semibold flex items-center gap-2"
                     >
                       Reservar
@@ -57,7 +57,7 @@ import { classSchedule } from '../data/siteData';
       <div class="text-center mt-8">
         <p class="text-gray-400 mb-4">Consulta el horario completo</p>
         <a
-          href="/classes"
+          href={withBase("/classes")}
           class="inline-flex items-center gap-3 bg-yellow-400 hover:bg-yellow-300 text-black px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
         >
           Horario completo

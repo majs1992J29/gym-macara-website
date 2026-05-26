@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
-import { classes, siteData, fullSchedule } from '../data/siteData';
+import { classes, siteData, fullSchedule, withBase } from '../data/siteData';
 ---
 
 <Layout title={`Clases - ${siteData.name}`} description="Browse our wide range of fitness classes">
@@ -71,7 +71,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                 </div>
                 
                 <a
-                  href="/contact"
+                  href={withBase("/contact")}
                   class="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-lg font-semibold transition-all"
                 >
                   Reservar esta clase

@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import PricingPlans from '../components/PricingPlans.astro';
-import { siteData, pricingPlans, paymentOptions } from '../data/siteData';
+import { siteData, pricingPlans, paymentOptions, withBase } from '../data/siteData';
 ---
 
 <Layout title={`Planes - ${siteData.name}`} description="Elige el plan que mejor se adapte a tus objetivos de entrenamiento">
@@ -213,7 +213,7 @@ import { siteData, pricingPlans, paymentOptions } from '../data/siteData';
         Contáctanos hoy para conocer el gimnasio y empezar tu proceso de entrenamiento
       </p>
       <a
-        href="/contact"
+        href={withBase("/contact")}
         class="inline-flex items-center justify-center gap-3 bg-white text-yellow-400 hover:bg-neutral-100 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
       >
         Contacto

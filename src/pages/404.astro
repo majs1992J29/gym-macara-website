@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { siteData } from '../data/siteData';
+import { siteData, withBase } from '../data/siteData';
 ---
 
 <Layout title={`404 - Page Not Found | ${siteData.name}`} description="Page not found">
@@ -13,14 +13,14 @@ import { siteData } from '../data/siteData';
       </p>
       <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
         <a
-          href="/"
+          href={withBase("/")}
           class="bg-yellow-400 hover:bg-yellow-300 text-black px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-3"
         >
           Go Home
           <i class="ri-home-line"></i>
         </a>
         <a
-          href="/contact"
+          href={withBase("/contact")}
           class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-8 py-4 rounded-lg font-bold text-lg transition-all inline-flex items-center justify-center gap-3"
         >
           Contacto

@@ -243,20 +243,20 @@ export const pricingPlans = [
 export const testimonials = [
   {
     name: "Willan Rios",
-    role: "Member for 2 years",
+    role: "Miembro desde hace 2 años",
     content: "Gimnasio Macará me ha motivado a entrenar con más constancia. El ambiente es bueno y los instructores ayudan durante el entrenamiento.",
     rating: 5,
   },
   {
     name: "José Miguel Jumbo S.",
-    role: "Member for 1 year",
+    role: "Miembro desde hace 1 año",
     content: "Gimnasio Macará cuenta con espacios amplios, buena atención y opciones para entrenar según tu disponibilidad.",
     rating: 5,
   },
   {
     name: "Emily Rodriguez",
-    role: "Member for 6 months",
-    content: "I love the variety of classes offered. The HIIT sessions are intense but so rewarding. Highly recommend!",
+    role: "Miembro desde hace 6 meses",
+    content: "Me gusta la variedad de entrenamientos y el ambiente del gimnasio. Las sesiones son exigentes, pero motivan a seguir mejorando.",
     rating: 5,
   },
 ];
@@ -329,8 +329,8 @@ export const successStories = [
   {
     name: "Jessica Martinez",
     age: 32,
-    duration: "8 months",
-    result: "Lost 45 lbs",
+    duration: "8 meses",
+    result: "Mejoró su condición física",
     story: "Entrenar en Gimnasio Macará me ayudó a ser más constante, mejorar mi técnica y organizar mejor mis rutinas de entrenamiento.",
     beforeImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=600&fit=crop&q=80",
     afterImage: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=600&fit=crop&q=80",
@@ -338,16 +338,16 @@ export const successStories = [
   {
     name: "David Thompson",
     age: 28,
-    duration: "6 months",
-    result: "Gained 20 lbs muscle",
-    story: "The strength training program and nutrition guidance helped me build the physique I always wanted. The trainers are true professionals.",
+    duration: "6 meses",
+    result: "Ganó masa muscular",
+    story: "El entrenamiento guiado me ayudó a mejorar mi fuerza, mi técnica y mi constancia. Los instructores brindan un acompañamiento muy profesional.",
     beforeImage: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&h=600&fit=crop&q=80",
     afterImage: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=400&h=600&fit=crop&q=80",
   },
   {
     name: "Lisa Anderson",
     age: 35,
-    duration: "1 year",
+    duration: "1 año",
     result: "Mejoró su condición física",
     story: "Con el acompañamiento de los instructores y el acceso a las zonas de fuerza y cardio, pudo avanzar progresivamente en su condición física.",
     beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=600&fit=crop&q=80",

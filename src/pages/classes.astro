@@ -4,14 +4,14 @@ import Layout from '../layouts/Layout.astro';
 import { classes, siteData, fullSchedule } from '../data/siteData';
 ---
 
-<Layout title={`Classes - ${siteData.name}`} description="Browse our wide range of fitness classes">
+<Layout title={`Clases - ${siteData.name}`} description="Browse our wide range of fitness classes">
   <!-- Hero Section -->
   <section class="pt-32 pb-20 bg-linear-to-br from-black via-neutral-950 to-black">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Nuestras clases</h1>
         <p class="text-xl text-gray-300">
-          Find the perfect workout for your fitness level and goals
+          Encuentra el entrenamiento adecuado para tu nivel y objetivos
         </p>
       </div>
     </div>
@@ -59,7 +59,7 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
                 </div>
                 
                 <div class="mb-6">
-                  <h4 class="text-white font-semibold mb-3">Key Benefits:</h4>
+                  <h4 class="text-white font-semibold mb-3">Beneficios principales:</h4>
                   <ul class="grid grid-cols-2 gap-2">
                     {classItem.benefits.map((benefit) => (
                       <li class="flex items-center gap-2 text-gray-300 text-sm">
@@ -85,25 +85,25 @@ import { classes, siteData, fullSchedule } from '../data/siteData';
     </div>
   </section>
 
-  <!-- Full Schedule Section -->
+  <!-- Sección de horario completo -->
   <section class="py-20 bg-neutral-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-4xl font-bold text-white mb-4 text-center">Horario semanal completo</h2>
       <p class="text-xl text-gray-300 mb-12 text-center max-w-2xl mx-auto">
-        Plan your week with our complete class schedule
+        Organiza tu semana con el horario completo de entrenamientos
       </p>
       <div class="bg-neutral-950 p-8 rounded-xl border border-neutral-800 overflow-x-auto">
         <table class="w-full text-left min-w-[800px]">
           <thead>
             <tr class="border-b border-neutral-800">
-              <th class="pb-4 pr-4 text-white font-semibold">Time</th>
-              <th class="pb-4 px-4 text-white font-semibold">Monday</th>
-              <th class="pb-4 px-4 text-white font-semibold">Tuesday</th>
-              <th class="pb-4 px-4 text-white font-semibold">Wednesday</th>
-              <th class="pb-4 px-4 text-white font-semibold">Thursday</th>
-              <th class="pb-4 px-4 text-white font-semibold">Friday</th>
-              <th class="pb-4 px-4 text-white font-semibold">Saturday</th>
-              <th class="pb-4 px-4 text-white font-semibold">Sunday</th>
+              <th class="pb-4 pr-4 text-white font-semibold">Hora</th>
+              <th class="pb-4 px-4 text-white font-semibold">Lunes</th>
+              <th class="pb-4 px-4 text-white font-semibold">Martes</th>
+              <th class="pb-4 px-4 text-white font-semibold">Miércoles</th>
+              <th class="pb-4 px-4 text-white font-semibold">Jueves</th>
+              <th class="pb-4 px-4 text-white font-semibold">Viernes</th>
+              <th class="pb-4 px-4 text-white font-semibold">Sábado</th>
+              <th class="pb-4 px-4 text-white font-semibold">Domingo</th>
             </tr>
           </thead>
           <tbody class="text-gray-300">

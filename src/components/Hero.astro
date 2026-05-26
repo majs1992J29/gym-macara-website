@@ -1,7 +1,5 @@
 ---
-import { Image } from 'astro:assets';
 import { siteData, withBase } from '@data/siteData';
-import HeroImage from "@assets/photo-1534438327276-14e5300c3a48.jpg"
 ---
 
 <section class="relative min-h-screen flex items-center justify-center bg-linear-to-br from-black via-neutral-950 to-black pt-20 overflow-hidden">
@@ -58,11 +56,11 @@ import HeroImage from "@assets/photo-1534438327276-14e5300c3a48.jpg"
       <div class="hidden lg:block">
         <div class="relative">
           <div class="aspect-square rounded-2xl overflow-hidden bg-neutral-900  border-2 border-neutral-800 shadow-2xl">
-            <Image
-              src={HeroImage}
+            <img
+              src={withBase("/home/hero.jpeg")}
               alt="Entrenamiento en Gimnasio Macará"
-              width={800}
-              height={800}
+              width="800"
+              height="800"
               class="w-full h-full object-cover"
               loading="eager"
             />
